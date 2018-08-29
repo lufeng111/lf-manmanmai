@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/productlist.css">
+  <script src="js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="lf-header clearfix">
+      <div class="logo fl">
+        <a href="#">
+          <img src="./images/header_logo.png" alt="">
+        </a>
+      </div>
+      <div class="app fr">
+        <a href="#">
+          <img src="./images/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- 搜索 -->
+    <div class="lf-search clearfix">
+      <div class="input fl">
+        <input type="search" placeholder="请输入您想比价的商品">
+      </div>
+      <div class="button fr">
+        <input type="button" value="搜索">
+      </div>
+    </div>
+    <!-- 商品列表 -->
+    <div class="lf-productlist">
+      <div class="title clearfix">
+        <div class="three fl">
+          <a href="#">首页</a>
+          <span>></span>
+          <a href="#">全部分类</a>
+          <span>></span>
+          <a href="#">空调</a>
+          <span>></span>
+        </div>
+        <div>
+          <button class="select fr">筛选</button>
+        </div>
+      </div>
+      <!-- 渲染商品部分 -->
+      <ul class="proItemBox clearfix">
+        <li class="proItem">
+          <a href="#">
+            <div class="img fl">
+              <img src="./images/product.jpg" alt="">
+            </div>
+            <div class="desc fr">
+              <div class="top">奥克斯(AUX) KFR-25GW/FK01+3 1匹 挂壁式定速冷暖空调</div>
+              <div class="bottom">
+                <div class="price">￥1499.00</div>
+                <span class="fl">报价(4)　</span>
+                <span class="fl">　评论（2403）</span>
+              </div>
+            </div>
+          </a>
+        </li>
+
+        <li class="proItem">
+          <a href="#">
+            <div class="img fl">
+              <img src="./images/product.jpg" alt="">
+            </div>
+            <div class="desc fr">
+              <div class="top">奥克斯(AUX) KFR-25GW/FK01+3 1匹 挂壁式定速冷暖空调</div>
+              <div class="bottom">
+                <div class="price">￥1499.00</div>
+                <span class="fl">报价(4)　</span>
+                <span class="fl">　评论（2403）</span>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <!-- 页码 -->
+      <div class="paging">
+        <div class="fl">
+          <button class="prev">上一页</button>
+        </div>
+        <div class="fl">
+          <div class="currPage">
+            <span>1/4</span>
+            <ul class="morePage">
+              <li>1/4</li>
+              <li>2/4</li>
+              <li>3/4</li>
+              <li>4/4</li>
+            </ul>
+          </div>
+        </div>
+        <div class="fl">
+          <button class="next">下一页</button>
+        </div>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="lf-footer">
+      <div class="top clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#">返回顶部</a>
+      </div>
+      <div class="bottom">
+        <p class="mobile">
+          <a href="#">手机app下载</a>
+          <a href="#">慢慢买手机版</a>
+          <a href="#">--掌上比价平台</a>
+        </p>
+        <p class="web">
+          <a href="#">m.manmanbuy.com</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/productlist.js"></script>
+  <!-- 根据catagoryid获取分类名 -->
+  <script type="text/template" id="getcategorybyid">
+    <a href="index.html">首页</a>
+    <span>></span>
+    <a href="category.html">全部分类</a>
+    <span>></span>
+    <a href="#">{{result[0].category}}</a>
+    <span>></span>
+  
+  </script>
+
+
+  <!-- 获取商品分类列表 -->
+  <script type="text/template" id="productlist">
+    {{each result v i}}
+  <li class="proItem" data-productId="{{v.productId}}">
+    <a href="bijia.html?productid={{v.productId}}" data-brandName="{{v.brandName}}">
+      <div class="img fl">
+        {{@v.productImg}}
+      </div>
+      <div class="desc fr">
+        <div class="top">{{v.productName}}</div>
+        <div class="bottom">
+          <div class="price">{{v.productPrice}}</div>
+          <span class="fl">{{v.productQuote}}　</span>
+          <span class="fl">　{{v.productCom}} </span>
+        </div>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+  </script>
+  <script type="text/template" id="pageCount">
+    <% for(i = 0; i < pageCount; i++) {%>}
+    <li>
+      <%=i+1%>/<%=pageCount%>
+    </li>
+  <%}%>
+  </script>
+</body>
+
+</html>

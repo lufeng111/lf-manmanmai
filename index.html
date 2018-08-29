@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="./js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="lf-header clearfix">
+      <div class="logo fl">
+        <a href="#">
+          <img src="./images/header_logo.png" alt="">
+        </a>
+      </div>
+      <div class="app fr">
+        <a href="#">
+          <img src="./images/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- 搜索 -->
+    <div class="lf-search clearfix">
+      <div class="input fl">
+        <input type="search" placeholder="请输入您想比价的商品">
+      </div>
+      <div class="button fr">
+        <input type="button" value="搜索">
+      </div>
+    </div>
+    <!-- 导航 -->
+    <div class="lf-nav">
+      <ul class="clearfix">
+        <li class="nav">
+          <a href="#">
+            <img src="./images/ic_search.png" alt="">
+            <p>白菜价</p>
+          </a>
+        </li>
+        <li class="nav">
+          <a href="#">
+            <img src="./images/ic_search.png" alt="">
+            <p>白菜价</p>
+          </a>
+        </li>
+        <li class="nav">
+          <a href="#">
+            <img src="./images/ic_search.png" alt="">
+            <p>白菜价</p>
+          </a>
+        </li>
+        <li class="nav">
+          <a href="#">
+            <img src="./images/ic_search.png" alt="">
+            <p>白菜价</p>
+          </a>
+        </li>
+        <li class="nav">
+          <a href="#">
+            <img src="./images/ic_search.png" alt="">
+            <p>白菜价</p>
+          </a>
+        </li>
+        <li class="nav">
+          <a href="#">
+            <img src="./images/ic_search.png" alt="">
+            <p>白菜价</p>
+          </a>
+        </li>
+        <li class="nav">
+          <a href="#">
+            <img src="./images/ic_search.png" alt="">
+            <p>白菜价</p>
+          </a>
+        </li>
+        <li class="nav">
+          <a href="#">
+            <img src="./images/ic_search.png" alt="">
+            <p>白菜价</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- 推荐 -->
+    <div class="lf-recomend">
+      <div class="title clearfix">
+        <i class="icon-right fr"></i>
+        <p class="fl">超值折扣推荐</p>
+      </div>
+      <div class="reco-content">
+        <ul class="clearfix">
+          <li>
+            <a href="#">
+              <div class="img fl">
+                <img src="./images/jiangyou.jpg" alt="图片">
+              </div>
+              <div class="desc fr">
+                <div class="top">
+                  <span class="goods">移动端凑单品：海天 鲜味 生抽 1.28升</span>
+                  <span class="price">10.9元</span>
+                </div>
+                <div class="bottom clearfix">
+                  <span class="fl">京东商城 | 8-25 　14：10</span>
+                  <span class="fr">有1人评论</span>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <div class="img fl">
+                <img src="./images/jiangyou.jpg" alt="图片">
+              </div>
+              <div class="desc fr">
+                <div class="top">
+                  <span class="goods">移动端凑单品：海天 鲜味 生抽 1.28升</span>
+                  <span class="price">10.9元</span>
+                </div>
+                <div class="bottom">
+                  <span class="fl">京东商城 | 8-25 　14：10</span>
+                  <span class="fr">有1人评论</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="more">
+        <a href="#">更多优惠信息 >> </a>
+      </div>
+
+    </div>
+    <!-- 商标 -->
+    <div class="lf-brand">
+      <div class="title clearfix">
+        <i class="icon-right fr"></i>
+        <p class="fl">品牌排行</p>
+      </div>
+    </div>
+    <!-- 底部 -->
+    <div class="lf-footer">
+      <div class="top clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#">返回顶部</a>
+      </div>
+      <div class="bottom">
+        <p class="mobile">
+          <a href="#">手机app下载</a>
+          <a href="#">慢慢买手机版</a>
+          <a href="#">--掌上比价平台</a>
+        </p>
+        <p class="web">
+          <a href="#">m.manmanbuy.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/index.js"></script>
+  <!-- 渲然导航栏的数据 -->
+  <script type="text/template" id="getindexmenu">
+  {{each result v i}}
+  <li class="nav{{i==7?' more':''}}{{i>7?' hide':''}}" data-indexmenuid="{{ v.indexmenuId }}">
+    <a href="{{v.titlehref}}">
+      {{@v.img}}
+      <p>{{v.name}}</p>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+  <!-- 渲染商品列表页 -->
+<script type="text/template" id="getmoneyctrl">
+  {{each result v i}}
+  <li class="item" data-productId="{{v.productId}}">
+      <a href="moneyproduct.html?productid={{v.productId}}">
+        <div class="img fl">
+          {{@v.productImgSm}}
+        </div>
+        <div class="desc fr">
+          <div class="top">
+            <span class="goods">{{v.productName}}</span>
+            <span class="price">{{v.productPinkage}}</span>
+          </div>
+          <div class="bottom">
+            <span class="fl">{{v.productForm}} | {{v.productTime}}</span>
+            <span class="fr">{{v.productComCount}}</span>
+          </div>
+        </div>
+      </a>
+    </li>
+  {{/each}}
+</script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+.lf-header {
+  width: 100%;
+  height: .9rem;
+  background-color: #f4483e;
+  padding: .25rem .13rem 0 .2rem;
+}
+.lf-header .back {
+  height: .35rem;
+  width: .35rem;
+  background: url(../images/icback.svg) no-repeat center center;
+  background-size: 100%;
+}
+.lf-header h3 {
+  text-align: center;
+  font-size: .28rem;
+  color: #fff;
+}
+.lf-header .app img {
+  width: .6rem;
+  height: .5rem;
+}
+.lf-couponProduct {
+  width: 100%;
+  background-color: #fff;
+}
+.lf-couponProduct .beforeTip {
+  width: 100%;
+  font-size: .3rem;
+  color: #999;
+  text-align: center;
+  padding: .25rem 0;
+}
+.lf-couponProduct .couproBox {
+  width: 100%;
+}
+.lf-couponProduct .couproBox .couproList {
+  width: 100%;
+  padding: .25rem .2rem;
+  position: relative;
+}
+.lf-couponProduct .couproBox .couproList .img {
+  width: 2.3rem;
+  height: 2.3rem;
+  float: left;
+}
+.lf-couponProduct .couproBox .couproList .img img {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+.lf-couponProduct .couproBox .couproList .desc {
+  width: 4.6rem;
+  height: 2.3rem;
+  float: right;
+  position: relative;
+}
+.lf-couponProduct .couproBox .couproList .desc .title {
+  font-size: 0.25rem;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.lf-couponProduct .couproBox .couproList .desc .price {
+  font-size: .25rem;
+  margin: .15rem 0;
+}
+.lf-couponProduct .couproBox .couproList .desc .deadTime {
+  font-size: .3rem;
+  color: #EE7700;
+  position: absolute;
+  left: 0;
+  bottom: .1rem;
+}
+.lf-couponProduct .couproBox .couproList .arrow-right {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.4rem;
+  background-image: url(../images/arrow-right.svg);
+  width: .5rem;
+  height: .5rem;
+  background-size: 100%;
+}
+.lf-footer {
+  margin-top: .3rem;
+  width: 100%;
+}
+.lf-footer .top {
+  height: .6rem;
+  width: 100%;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  line-height: .6rem;
+}
+.lf-footer .top a {
+  width: 33.3%;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.lf-footer .top a:nth-child(2) {
+  border-right: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+}
+.lf-footer .bottom {
+  width: 100%;
+  height: 1.5rem;
+  text-align: center;
+  padding: .3rem 0;
+}
+.lf-footer .bottom p {
+  font-size: .25rem;
+}
+.lf-footer .bottom .mobile a {
+  color: red;
+}
+.lf-footer .bottom .mobile a:nth-child(2) {
+  color: #000;
+}
+.lf-footer .bottom .mobile a:nth-child(3) {
+  color: #666;
+}
+.lf-footer .bottom .web a {
+  color: #666;
+}

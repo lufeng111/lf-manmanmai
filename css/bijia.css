@@ -1,0 +1,233 @@
+.lf-header {
+  width: 100%;
+  height: .9rem;
+  background-color: #ff841d;
+  padding-top: .2rem;
+}
+.lf-header .logo {
+  padding-left: .2rem;
+}
+.lf-header .logo img {
+  width: auto;
+  height: .4rem;
+}
+.lf-header .app {
+  padding-right: .1rem;
+  width: auto;
+}
+.lf-header .app img {
+  width: auto;
+  height: .5rem;
+}
+.lf-search {
+  background-color: #fff;
+  width: 100%;
+  height: .7rem;
+  line-height: .7rem;
+  padding: 0 .15rem;
+}
+.lf-search .input input {
+  width: 4rem;
+  height: .4rem;
+  border-radius: .2rem;
+  padding-left: .2rem;
+  background-color: #f1f1f1;
+}
+.lf-search .button input {
+  width: .8rem;
+  font-size: .18rem;
+  height: .4rem;
+  background-color: #ff841d;
+  border-radius: .2rem;
+  color: #fff;
+}
+.lf-bijia {
+  width: 100%;
+}
+.lf-bijia .title {
+  background-color: #ebebeb;
+  width: 100%;
+  height: 0.6rem;
+  line-height: .6rem;
+  padding-left: .2rem;
+  font-size: .20rem;
+  background-image: linear-gradient(#ffffff, #ebebeb);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 0.02rem 0.04rem #888;
+  box-sizing: border-box;
+}
+.lf-bijia .title .select {
+  background-color: #d0d0d0;
+  width: 1rem;
+  height: .45rem;
+  font-size: .20rem;
+  border: none;
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 0.01rem 0.03rem #888;
+  border-radius: .1rem;
+  margin: 0.05rem;
+}
+.lf-bijia .desc {
+  width: 100%;
+  height: 4rem;
+  background-color: #fff;
+  padding: .3rem .3rem 0 .3rem;
+  text-align: center;
+  position: relative;
+}
+.lf-bijia .desc h3 {
+  font-size: .25rem;
+  font-weight: 700;
+  margin-bottom: .1.3rem;
+}
+.lf-bijia .desc img {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.lf-bijia .desc .collect {
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+  background-color: lime;
+  color: #fff;
+  font-size: .23rem;
+  position: absolute;
+  top: 3rem;
+  right: .6rem;
+}
+.lf-bijia .function {
+  background-color: #ffc62a;
+  width: 100%;
+  height: .7rem;
+  text-align: center;
+  line-height: .7rem;
+  font-size: .25rem;
+  font-weight: 700;
+  border-top: 0.02rem solid #d84d00;
+  border-bottom: 0.02rem solid #d84d00;
+  box-sizing: border-box;
+  color: #fff;
+}
+.lf-bijia .function .buy {
+  width: 33.3%;
+  height: 100%;
+}
+.lf-bijia .function .param {
+  width: 33.3%;
+  border-left: 0.02rem solid red;
+  border-right: 0.02rem solid red;
+  height: 100%;
+}
+.lf-bijia .goShop {
+  width: 100%;
+  background-color: #fff;
+}
+.lf-bijia .goShop .shopTop {
+  width: 100%;
+  height: 0.7rem;
+  border-bottom: 0.02rem solid #ccc;
+  padding: .2rem .15rem;
+}
+.lf-bijia .goShop .bottom {
+  width: 100%;
+  height: 0.8rem;
+  border-bottom: 0.03rem solid #444;
+  padding: .2rem .15rem;
+  font-size: .18rem;
+  color: #666;
+}
+.lf-evaluate {
+  width: 100%;
+  background-color: #fff;
+}
+.lf-evaluate .evaTop {
+  background-color: #dbdbdb;
+  width: 100%;
+  height: .6rem;
+  text-align: center;
+  color: #000;
+  font-size: .23rem;
+  font-weight: 700;
+  line-height: .6rem;
+  border-bottom: 1px solid #ccc;
+}
+.lf-evaluate .comBox {
+  width: 100%;
+}
+.lf-evaluate .comBox .comList {
+  width: 100%;
+  padding: .25rem .18rem .18rem .18rem;
+  border-bottom: 1px solid #ccc;
+}
+.lf-evaluate .comBox .comList a .comTitle {
+  font-size: .18rem;
+  color: #666;
+  height: .6rem;
+  position: relative;
+}
+.lf-evaluate .comBox .comList a .comTitle .comForm {
+  position: absolute;
+  top: 0.3rem;
+  right: 0;
+}
+.lf-evaluate .comBox .comList a .comContent {
+  font-size: .23rem;
+}
+.lf-moreCom {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #fff;
+  padding: .3rem .2rem;
+}
+.lf-moreCom a {
+  background-color: #dcdcdc;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  border: 0.02rem solid #ccc;
+  font-size: 0.28rem;
+  display: block;
+  text-align: center;
+  line-height: 0.64rem;
+  box-shadow: 0 1px 1px #ccc;
+}
+.lf-footer {
+  width: 100%;
+}
+.lf-footer .top {
+  height: .6rem;
+  width: 100%;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  line-height: .6rem;
+}
+.lf-footer .top a {
+  width: 33.3%;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.lf-footer .top a:nth-child(2) {
+  border-right: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+}
+.lf-footer .bottom {
+  width: 100%;
+  height: 1.5rem;
+  text-align: center;
+  padding: .3rem 0;
+}
+.lf-footer .bottom p {
+  font-size: .25rem;
+}
+.lf-footer .bottom .mobile a {
+  color: red;
+}
+.lf-footer .bottom .mobile a:nth-child(2) {
+  color: #000;
+}
+.lf-footer .bottom .mobile a:nth-child(3) {
+  color: #666;
+}
+.lf-footer .bottom .web a {
+  color: #666;
+}

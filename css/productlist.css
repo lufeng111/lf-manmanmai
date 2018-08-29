@@ -1,0 +1,178 @@
+.lf-header {
+  width: 100%;
+  height: .9rem;
+  background-color: #ff841d;
+  padding-top: .2rem;
+}
+.lf-header .logo {
+  padding-left: .2rem;
+}
+.lf-header .logo img {
+  width: auto;
+  height: .4rem;
+}
+.lf-header .app {
+  padding-right: .1rem;
+  width: auto;
+}
+.lf-header .app img {
+  width: auto;
+  height: .5rem;
+}
+.lf-search {
+  background-color: #fff;
+  width: 100%;
+  height: .7rem;
+  line-height: .7rem;
+  padding: 0 .15rem;
+}
+.lf-search .input input {
+  width: 4rem;
+  height: .4rem;
+  border-radius: .2rem;
+  padding-left: .2rem;
+  background-color: #f1f1f1;
+}
+.lf-search .button input {
+  width: .8rem;
+  font-size: .18rem;
+  height: .4rem;
+  background-color: #ff841d;
+  border-radius: .2rem;
+  color: #fff;
+}
+.lf-productlist {
+  width: 100%;
+}
+.lf-productlist .title {
+  background-color: #ebebeb;
+  width: 100%;
+  height: 0.6rem;
+  line-height: .6rem;
+  padding-left: .2rem;
+  font-size: .20rem;
+  background-image: linear-gradient(#ffffff, #ebebeb);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 0.02rem 0.04rem #888;
+  box-sizing: border-box;
+}
+.lf-productlist .title .select {
+  background-color: #d0d0d0;
+  width: 1rem;
+  height: .45rem;
+  font-size: .20rem;
+  border: none;
+  border-bottom: 1px solid #bababa;
+  box-shadow: 0 0.01rem 0.03rem #888;
+  border-radius: .1rem;
+  margin: 0.05rem;
+}
+.lf-productlist .proItemBox {
+  width: 100%;
+}
+.lf-productlist .proItemBox .proItem {
+  width: 100%;
+  padding: .25rem .15rem;
+  height: 2.2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.lf-productlist .proItemBox .proItem a .img {
+  width: 23%;
+  height: 100%;
+}
+.lf-productlist .proItemBox .proItem a .img img {
+  width: 100%;
+  height: 100%;
+}
+.lf-productlist .proItemBox .proItem a .desc {
+  width: 77%;
+  height: 100%;
+  padding-left: .3rem;
+  font-size: .20rem;
+}
+.lf-productlist .proItemBox .proItem a .desc .bottom {
+  margin-top: .5rem;
+}
+.lf-productlist .proItemBox .proItem a .desc .bottom .price {
+  color: red;
+}
+.lf-productlist .proItemBox .proItem a .desc .bottom .fl {
+  color: #666;
+  font-size: .16rem;
+}
+.lf-productlist .paging {
+  width: 100%;
+  height: .8rem;
+  background-color: #fff;
+  line-height: .8rem;
+  overflow: hidden;
+}
+.lf-productlist .paging .fl {
+  width: 33.3%;
+  text-align: center;
+  padding: 0 .4rem;
+}
+.lf-productlist .paging .fl .prev {
+  width: 80%;
+  height: .5rem;
+  font-size: .2rem;
+}
+.lf-productlist .paging .fl .next {
+  width: 80%;
+  height: .5rem;
+  font-size: .2rem;
+}
+.lf-productlist .paging .fl .currPage {
+  width: 70%;
+  height: .56rem;
+  line-height: .56rem;
+  margin: auto;
+  margin-top: .2rem;
+  border: 1px solid #ccc;
+}
+.lf-productlist .paging .fl .currPage span {
+  font-size: .2rem;
+}
+.lf-footer {
+  width: 100%;
+}
+.lf-footer .top {
+  height: .6rem;
+  width: 100%;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  line-height: .6rem;
+}
+.lf-footer .top a {
+  width: 33.3%;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.lf-footer .top a:nth-child(2) {
+  border-right: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+}
+.lf-footer .bottom {
+  width: 100%;
+  height: 1.5rem;
+  text-align: center;
+  padding: .3rem 0;
+}
+.lf-footer .bottom p {
+  font-size: .25rem;
+}
+.lf-footer .bottom .mobile a {
+  color: red;
+}
+.lf-footer .bottom .mobile a:nth-child(2) {
+  color: #000;
+}
+.lf-footer .bottom .mobile a:nth-child(3) {
+  color: #666;
+}
+.lf-footer .bottom .web a {
+  color: #666;
+}

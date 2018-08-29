@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/bijia.css">
+  <script src="js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="lf-header clearfix">
+      <div class="logo fl">
+        <a href="#">
+          <img src="./images/header_logo.png" alt="">
+        </a>
+      </div>
+      <div class="app fr">
+        <a href="#">
+          <img src="./images/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- 搜索 -->
+    <div class="lf-search clearfix">
+      <div class="input fl">
+        <input type="search" placeholder="请输入您想比价的商品">
+      </div>
+      <div class="button fr">
+        <input type="button" value="搜索">
+      </div>
+    </div>
+    <!-- 商品比价 -->
+    <div class="lf-bijia">
+      <div class="title clearfix">
+        <div class="three fl">
+          <a href="#">首页</a>
+          <span>></span>
+          <a href="#">电视</a>
+          <span>></span>
+          <a href="#">乐视TV(Letv)</a>
+          <span>></span>
+        </div>
+        <div>
+          <button class="select fr">筛选</button>
+        </div>
+      </div>
+      <div class="desc">
+        <h3>乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视</h3>
+        <img src="./images/tv.png" alt="">
+        <button class="collect">收藏</button>
+      </div>
+      <div class="function clearfix">
+        <div class="buy fl active">比价购买</div>
+        <div class="param fl">产品参数</div>
+        <div> 评价（2322）</div>
+      </div>
+      <div class="goShop">
+        <div class="shopTop"></div> 
+        <div class="bottom">
+          * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+        </div>
+      </div>
+    </div>
+    <!-- 商品评价 -->
+    <div class="lf-evaluate">
+      <div class="evaTop">网友评价</div>
+      <ul class="comBox">
+        <li class="comList"><a href="#">
+          <div class="comTitle clearfix">
+            <span class="fl">啥****？</span>
+            <span class="fr">2016/10/1</span>
+            <span class="comForm">购买自：京东商城</span>
+          </div>
+          <div class="comContent">
+            "
+            使用了一周整体不错，主要是为了看纪录片和足球。装在窗户上有种大鱼缸的感觉哈！清晰度不错色彩也可以，应该说对得起2200的价格！还送了五年乐视会员，看英超所有比赛都free，但乐观乐视内容这块还不太丰富，应为家里也有百事通bestv和小米盒子，比较了下，电影百事通最好，纪录片小米最好，只有体育这块乐视比那两家好，还要多努力啊！电视本身有个不足，音响太差，太山寨了！而且不支持3.5mm接口或红白莲音频输出，害得我折腾半天，必须买光纤音频线
+          "
+          </div>
+        </a></li>
+        <!-- <li class="comList"></li> -->
+      </ul>
+    </div>
+    <!-- 更多评价 -->
+    <div class="lf-moreCom">
+      <a class="moreom" href="#">查看更多评价</a>
+    </div>
+    <!-- 底部 -->
+    <div class="lf-footer">
+      <div class="top clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#">返回顶部</a>
+      </div>
+      <div class="bottom">
+        <p class="mobile">
+          <a href="#">手机app下载</a>
+          <a href="#">慢慢买手机版</a>
+          <a href="#">--掌上比价平台</a>
+        </p>
+        <p class="web">
+          <a href="#">m.manmanbuy.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/bijia.js"></script>
+  <!-- 商品详情 -->
+  <script type="text/template" id="getproduct">
+    <h3>{{result[0].productName}}</h3>
+    {{@result[0].productImg}}
+    <button class="collect">收藏</button>
+  </script>
+
+  <!-- 购买按钮是渲染上去的 -->
+  <script type="text/template" id="goShop">
+    {{@result[0].bjShop}}
+  </script>
+  <!-- 根据分类id和商品id实现3级菜单 -->
+  <script type="text/template" id="bijiaTitle">
+    <a href="index.html">首页</a>
+    <span>></span>
+    <a href="productlist.html?categoryid={{category.categoryId}}">{{category.category}}</a>
+    <span>></span>
+    <a href="javascript:;">{{productName}}</a>
+  </script>
+  <!-- 商品评价 -->
+  <script type="text/template" id="getproductcom">
+    {{each result v i}}
+    <li class="comList"><a href="#">
+      <div class="comTitle clearfix">
+        <span class="fl">{{v.comName}}</span>
+        <span class="fr">{{v.comTime}}</span>
+        <span class="comForm">{{v.comFrom}}</span>
+      </div>
+      <div class="comContent">
+        {{v.comContent}}
+      </div>
+    </a></li>  
+    {{/each}}
+  </script>
+</body>
+
+</html>

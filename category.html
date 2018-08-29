@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/category.css">
+  <script src="js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="lf-header clearfix">
+      <div class="logo fl">
+        <a href="#">
+          <img src="./images/header_logo.png" alt="">
+        </a>
+      </div>
+      <div class="app fr">
+        <a href="#">
+          <img src="./images/header_app.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- 搜索 -->
+    <div class="lf-search clearfix">
+      <div class="input fl">
+        <input type="search" placeholder="请输入您想比价的商品">
+      </div>
+      <div class="button fr">
+        <input type="button" value="搜索">
+      </div>
+    </div>
+    <!-- 分类 -->
+    <div class="lf-category">
+      <ul class="itemBox">
+        <li class="item">
+          <a href="#">大家电</a>
+          <ul class="subBox clearfix">
+            <li class="subItem fl">
+              <a href="#">电视</a>
+            </li>
+            <li class="subItem fl">
+              <a href="#">电视</a>
+            </li>
+            <li class="subItem fl">
+              <a href="#">电视</a>
+            </li>
+            </a>
+        </li>
+        </ul>
+        </li>
+
+        <li class="item">
+          <a href="#">大家电</a>
+          <ul class="subBox clearfix">
+            <li class="subItem fl">
+              <a href="#">电视</a>
+            </li>
+            <li class="subItem fl">
+              <a href="#">电视</a>
+            </li>
+            <li class="subItem fl">
+              <a href="#">电视</a>
+            </li>
+            </a>
+        </li>
+        </ul>
+        </li>
+        <!-- <li><a href="#">大家电</a></li>
+        <li><a href="#">大家电</a></li>
+        <li><a href="#">大家电</a></li> -->
+      </ul>
+    </div>
+    <!-- 底部 -->
+    <div class="lf-footer">
+      <div class="top clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#">返回顶部</a>
+      </div>
+      <div class="bottom">
+        <p class="mobile">
+          <a href="#">手机app下载</a>
+          <a href="#">慢慢买手机版</a>
+          <a href="#">--掌上比价平台</a>
+        </p>
+        <p class="web">
+          <a href="#">m.manmanbuy.com</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="js/category.js"></script>
+  <!-- 渲染分类页大标题 -->
+  <script type="text/template" id="titleList">
+    {{each result v i}}
+    <li class="item">
+      <a href="javascript:;" data-titleid="{{v.titleId}}">{{v.title}}</a>
+      <ul class="subBox clearfix"></ul> 
+    </li>
+    {{/each}}
+  </script>
+  <!-- 点击分类标题获取标题对应的分类页数据渲染到页面上 -->
+  <script type="text/template" id="cateList">
+  {{each result v i}}
+    <li class="subItem fl">
+      <a href="productlist.html?categoryid={{v.categoryId}}">{{v.category}}</a>
+    </li>
+  {{/each}}
+  </script>
+
+
+</body>
+
+</html>

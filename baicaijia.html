@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/baicaijia.css">
+  <script src="js/rem.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="lf-header clearfix">
+      <i class="back fl"></i>
+      <div class="app fr">
+        <a href="#">
+          <img src="./images/header_app.png" alt="">
+        </a>
+      </div>
+      <h3>白菜价-淘宝内部券</h3>
+    </div>
+    <!-- 导航部分 -->
+    <div class="lf-bcjNav">
+      <ul class="navBox clearfix">
+
+        <li class="navList">
+          <a href="#">全部</a>
+        </li>
+        <li class="navList">
+          <a href="#">全部</a>
+        </li>
+        <li class="navList">
+          <a href="#">全部</a>
+        </li>
+        <li class="navList">
+          <a href="#">19块邮</a>
+        </li>
+        <li class="navList">
+          <a href="#">数码家电</a>
+        </li>
+        <li class="navList">
+          <a href="#">居家</a>
+        </li>
+        <li class="navList">
+          <a href="#">美食</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="lf-bcjContent">
+      <ul class="bcjBox clearfix">
+        <li class="bcjList">
+          <a href="#">
+            <div class="img">
+              <img src="./images/jiangyou.jpg" alt="">
+            </div>
+          </a>
+          <div class="desc clearfix">
+            <a href="#">
+              <div class="title">
+                <span class="b">[包邮]</span>
+                "双十一红包 今日开启"
+              </div>
+              <div class="price">
+                <i></i>
+                <em>￥</em>
+                "0.0"
+                <del>￥0</del>
+              </div>
+            </a>
+            <div class="bar clearfix">
+              <a href="#"></a>
+              <a href="#"></a>
+              <i>
+                <span>1%</span>
+                <em></em>
+              </i>
+              <b>已领82张</b>
+            </div>
+            <div class="couLink clearfix">
+              <a href="#">点此领15元优惠券</a>
+            </div>
+            <div class="shopLink">
+              <a href="#">下单链接</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="bcjList">
+          <a href="#">
+            <div class="img">
+              <img src="./images/jiangyou.jpg" alt="">
+            </div>
+          </a>
+          <div class="desc">
+            <a href="#">
+              <div class="title">
+                <span class="b">[包邮]</span>
+                "双十一红包 今日开启"
+              </div>
+              <div class="price">
+                <i></i>
+                <em>￥</em>
+                "0.0"
+                <del>￥0</del>
+              </div>
+            </a>
+            <div class="bar">
+              <a href="#"></a>
+              <a href="#"></a>
+              <i>
+                <em></em>
+                <span>1%</span>
+              </i>
+              <b>已领82张</b>
+            </div>
+            <div class="couLink">
+              <a href="#">点此领15元优惠券</a>
+            </div>
+            <div class="shopLink">
+              <a href="#">下单链接</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 底部 -->
+    <div class="lf-footer">
+      <div class="top clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#">返回顶部</a>
+      </div>
+      <div class="bottom">
+        <p class="mobile">
+          <a href="#">手机app下载</a>
+          <a href="#">慢慢买手机版</a>
+          <a href="#">--掌上比价平台</a>
+        </p>
+        <p class="web">
+          <a href="#">m.manmanbuy.com</a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="lib/IScroll/iscroll.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/baicaijia.js"></script>
+  <!-- 获取导航栏的数据渲染到页面上 -->
+  <script type="text/template" id="navList">
+    {{each result v i}}
+    <li class="navList">
+      <a href="javascript:;" data-titleId="{{v.titleId}}">{{v.title}}</a>
+    </li>
+    {{/each}}
+  </script>
+  <!-- 根据导航栏的标题获取对应商品渲染到页面上 -->
+  <script type="text/template" id="bcjList">
+  {{each result v i}}
+  <li class="bcjList">
+      <a href="#">
+        <div class="img">
+          {{@v.productImg}}
+        </div>
+      </a>
+      <div class="desc clearfix">
+        <a href="#">
+          <div class="title">
+            {{@v.productName}}
+          </div>
+          <div class="price">
+            <i></i>
+            {{@v.productPrice}}
+          </div>
+        </a>
+        {{@v.productCouponRemain}}
+        <div class="couLink clearfix">
+          {{@v.productCoupon}}
+        </div>
+        <div class="shopLink">
+          {{@v.productHref}}
+        </div>
+      </div>
+    </li>
+  {{/each}}
+  
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+@color:#ff841d;
+@title:#ff9000;
+@footer:#c4c4c4;
+
+// 头部
+.lf-header{
+  width: 100%;
+  height: .9rem;
+  background-color: @color;
+  padding-top: .2rem;
+  .logo{
+    // background-color: red;
+    padding-left: .2rem;
+    img{
+      width: auto;
+      width: auto;
+      height: .4rem;
+    }
+  }
+  .app{
+    // background-color: red;
+    padding-right: .1rem;
+    width: auto;
+    img{
+      width: auto;
+      height: .5rem;
+    }
+  }
+}
+// 搜索
+.lf-search{
+  background-color: #fff;
+  width: 100%;
+  height: .7rem;
+  line-height: .7rem;
+  padding: 0 .15rem;
+  .input input{
+    width: 4rem;
+    height: .4rem;
+    // border: 1px solid #000;
+    border-radius: .2rem;
+    padding-left: .2rem;
+    background-color: #f1f1f1;
+  }
+  .button input{
+    width: .8rem;
+    font-size: .18rem;
+    height: .4rem;
+    background-color: @color;
+    border-radius: .2rem;
+    color: #fff;
+  }
+}
+// 菜单
+.lf-topMenu{
+  width: 100%;
+  .title{
+    background-color: #ebebeb;
+    width: 100%;
+    height: 0.6rem;
+    line-height: .6rem;
+    padding-left: .2rem;
+    font-size: .20rem;
+    background-image: linear-gradient(#ffffff,#ebebeb);
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ccc;
+    // box-shadow: 0 0.02rem 0.04rem #888;
+    box-sizing: border-box;
+    
+  }
+}
+// 商标
+.lf-brandRank{
+  width: 100%;
+  .title{
+    // width: 100%;
+    height: .7rem;
+    line-height: .7rem;
+    padding-left: .2rem;
+    border-bottom: .02rem solid #ccc;
+    // margin: .2rem .1rem;
+    background-color: #f3f3f3;
+    font-size: .27rem;
+    color: #874604;
+  }
+  .brandBox{
+    width: 100%;
+    .brandList{
+      height: 1.3rem;
+      // background-color: pink;
+      padding: .15rem .2rem;
+      border-bottom: .02rem solid #ccc;
+      .rank{
+        float: left;
+        width: .4rem;
+        line-height: .4rem;
+        height: .4rem;
+        background-color: #999;
+        color: #fff;
+        text-align: center;
+        margin-right: .15rem;
+      }
+      .rank:nth-child(1){
+        background-color: red;
+      }
+      .rank:nth-child(2){
+        background-color: yellow;
+      }
+      .rank:nth-child(3){
+        background-color: lime;
+      }
+      .desc{
+        float: left;
+        p:nth-child(1){
+          font-size: .32rem;
+        }
+        p:nth-child(2){
+          font-size: .23rem;
+          color: #999;
+          margin-top: .15rem;
+        }
+      }
+    }
+  }
+}
+// 售价
+.lf-saleRank{
+  width: 100%;
+  .title{
+    // width: 100%;
+    height: .7rem;
+    line-height: .7rem;
+    padding-left: .2rem;
+    border-bottom: .02rem solid #ccc;
+    // margin: .2rem .1rem;
+    background-color: #f3f3f3;
+    font-size: .27rem;
+    color: #874604;
+  }
+  .saleBox{
+    width: 100%;
+    .saleList{
+      width: 100%;
+      padding: .25rem .15rem;
+      height: 2.2rem;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      a{
+        .img{
+          width: 23%;
+          height: 100%;
+          // background-color: pink;
+          // border: 1px solid #000;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .desc{
+          width: 77%;
+          // background-color: pink;
+          // border: 1px solid #000;
+          height: 100%;
+          padding-left: .3rem;
+          font-size: .20rem;
+          .bottom{
+            margin-top: .5rem;
+            .price{
+              color: red;
+            }
+            .fl{
+              color: #666;
+              font-size: .16rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 最新评论
+.lf-newCom{
+  width: 100%;
+  .title{
+    // width: 100%;
+    height: .7rem;
+    line-height: .7rem;
+    padding-left: .2rem;
+    border-bottom: .02rem solid #ccc;
+    // margin: .2rem .1rem;
+    background-color: #f3f3f3;
+    font-size: .27rem;
+    color: #874604;
+  }
+  .comBox{
+    width: 100%;
+    background-color: #fff;
+    .comList{
+      width: 100%;
+      padding: .26rem .26rem;
+      // height: 2.2rem;
+      border-bottom: 1px solid #ccc;
+      .comTop{
+        width: 100%;
+        .img{
+          width: 23%;
+          height: 100%;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        p{
+          color:#999999;
+          font-size: .25rem;
+          width: 74%;
+
+        }
+      }
+      .comCon{
+        width: 100%;
+        border: .02rem solid #ccc;
+        background-color: #f8f8f8;
+        // height: 4rem;
+        padding: .28rem;
+        .comHeader{
+          height: 0.38rem;
+          line-height: 0.38rem;
+          font-size: 0.3rem;
+          color: #4f6900;
+          .time{
+            color: #999;
+            font-size: 0.27rem;
+          }
+        }
+        .comment{
+          margin-top: 0.2rem;
+          font-size: .27rem;
+        }
+      }
+    }
+  }
+}
+
+
+// 底部
+.lf-footer{
+  // margin-top: .3rem;
+  width: 100%;
+  .top{
+    height: .6rem;
+    width: 100%;
+    border-top: 1px solid @footer;
+    border-bottom: 1px solid @footer;
+    line-height: .6rem;
+    
+    a{
+      width: 33.3%;
+      display: block;
+      float: left;
+      text-align: center;
+    }
+    a:nth-child(2){
+      border-right: 1px solid @footer;
+      border-left: 1px solid @footer;
+    }
+  }
+  .bottom{
+    width: 100%;
+    height: 1.5rem;
+    // background-color: red;
+    text-align: center;
+    padding: .3rem 0;
+    p{
+      font-size: .25rem;
+    }
+    .mobile{
+      a{
+        color: red;
+      }
+      a:nth-child(2){
+        color: #000;
+      }
+      a:nth-child(3){
+        color: #666;
+      }
+    }
+    .web{
+      a{
+        color: #666;
+      }
+    }
+  }
+}

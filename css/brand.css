@@ -1,0 +1,252 @@
+.lf-header {
+  width: 100%;
+  height: .9rem;
+  background-color: #ff841d;
+  padding-top: .2rem;
+}
+.lf-header .logo {
+  padding-left: .2rem;
+}
+.lf-header .logo img {
+  width: auto;
+  height: .4rem;
+}
+.lf-header .app {
+  padding-right: .1rem;
+  width: auto;
+}
+.lf-header .app img {
+  width: auto;
+  height: .5rem;
+}
+.lf-search {
+  background-color: #fff;
+  width: 100%;
+  height: .7rem;
+  line-height: .7rem;
+  padding: 0 .15rem;
+}
+.lf-search .input input {
+  width: 4rem;
+  height: .4rem;
+  border-radius: .2rem;
+  padding-left: .2rem;
+  background-color: #f1f1f1;
+}
+.lf-search .button input {
+  width: .8rem;
+  font-size: .18rem;
+  height: .4rem;
+  background-color: #ff841d;
+  border-radius: .2rem;
+  color: #fff;
+}
+.lf-topMenu {
+  width: 100%;
+}
+.lf-topMenu .title {
+  background-color: #ebebeb;
+  width: 100%;
+  height: 0.6rem;
+  line-height: .6rem;
+  padding-left: .2rem;
+  font-size: .20rem;
+  background-image: linear-gradient(#ffffff, #ebebeb);
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.lf-brandRank {
+  width: 100%;
+}
+.lf-brandRank .title {
+  height: .7rem;
+  line-height: .7rem;
+  padding-left: .2rem;
+  border-bottom: .02rem solid #ccc;
+  background-color: #f3f3f3;
+  font-size: .27rem;
+  color: #874604;
+}
+.lf-brandRank .brandBox {
+  width: 100%;
+}
+.lf-brandRank .brandBox .brandList {
+  height: 1.3rem;
+  padding: .15rem .2rem;
+  border-bottom: .02rem solid #ccc;
+}
+.lf-brandRank .brandBox .brandList .rank {
+  float: left;
+  width: .4rem;
+  line-height: .4rem;
+  height: .4rem;
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  margin-right: .15rem;
+}
+.lf-brandRank .brandBox .brandList .rank:nth-child(1) {
+  background-color: red;
+}
+.lf-brandRank .brandBox .brandList .rank:nth-child(2) {
+  background-color: yellow;
+}
+.lf-brandRank .brandBox .brandList .rank:nth-child(3) {
+  background-color: lime;
+}
+.lf-brandRank .brandBox .brandList .desc {
+  float: left;
+}
+.lf-brandRank .brandBox .brandList .desc p:nth-child(1) {
+  font-size: .32rem;
+}
+.lf-brandRank .brandBox .brandList .desc p:nth-child(2) {
+  font-size: .23rem;
+  color: #999;
+  margin-top: .15rem;
+}
+.lf-saleRank {
+  width: 100%;
+}
+.lf-saleRank .title {
+  height: .7rem;
+  line-height: .7rem;
+  padding-left: .2rem;
+  border-bottom: .02rem solid #ccc;
+  background-color: #f3f3f3;
+  font-size: .27rem;
+  color: #874604;
+}
+.lf-saleRank .saleBox {
+  width: 100%;
+}
+.lf-saleRank .saleBox .saleList {
+  width: 100%;
+  padding: .25rem .15rem;
+  height: 2.2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.lf-saleRank .saleBox .saleList a .img {
+  width: 23%;
+  height: 100%;
+}
+.lf-saleRank .saleBox .saleList a .img img {
+  width: 100%;
+  height: 100%;
+}
+.lf-saleRank .saleBox .saleList a .desc {
+  width: 77%;
+  height: 100%;
+  padding-left: .3rem;
+  font-size: .20rem;
+}
+.lf-saleRank .saleBox .saleList a .desc .bottom {
+  margin-top: .5rem;
+}
+.lf-saleRank .saleBox .saleList a .desc .bottom .price {
+  color: red;
+}
+.lf-saleRank .saleBox .saleList a .desc .bottom .fl {
+  color: #666;
+  font-size: .16rem;
+}
+.lf-newCom {
+  width: 100%;
+}
+.lf-newCom .title {
+  height: .7rem;
+  line-height: .7rem;
+  padding-left: .2rem;
+  border-bottom: .02rem solid #ccc;
+  background-color: #f3f3f3;
+  font-size: .27rem;
+  color: #874604;
+}
+.lf-newCom .comBox {
+  width: 100%;
+  background-color: #fff;
+}
+.lf-newCom .comBox .comList {
+  width: 100%;
+  padding: .26rem .26rem;
+  border-bottom: 1px solid #ccc;
+}
+.lf-newCom .comBox .comList .comTop {
+  width: 100%;
+}
+.lf-newCom .comBox .comList .comTop .img {
+  width: 23%;
+  height: 100%;
+}
+.lf-newCom .comBox .comList .comTop .img img {
+  width: 100%;
+  height: 100%;
+}
+.lf-newCom .comBox .comList .comTop p {
+  color: #999999;
+  font-size: .25rem;
+  width: 74%;
+}
+.lf-newCom .comBox .comList .comCon {
+  width: 100%;
+  border: .02rem solid #ccc;
+  background-color: #f8f8f8;
+  padding: .28rem;
+}
+.lf-newCom .comBox .comList .comCon .comHeader {
+  height: 0.38rem;
+  line-height: 0.38rem;
+  font-size: 0.3rem;
+  color: #4f6900;
+}
+.lf-newCom .comBox .comList .comCon .comHeader .time {
+  color: #999;
+  font-size: 0.27rem;
+}
+.lf-newCom .comBox .comList .comCon .comment {
+  margin-top: 0.2rem;
+  font-size: .27rem;
+}
+.lf-footer {
+  width: 100%;
+}
+.lf-footer .top {
+  height: .6rem;
+  width: 100%;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  line-height: .6rem;
+}
+.lf-footer .top a {
+  width: 33.3%;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.lf-footer .top a:nth-child(2) {
+  border-right: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+}
+.lf-footer .bottom {
+  width: 100%;
+  height: 1.5rem;
+  text-align: center;
+  padding: .3rem 0;
+}
+.lf-footer .bottom p {
+  font-size: .25rem;
+}
+.lf-footer .bottom .mobile a {
+  color: red;
+}
+.lf-footer .bottom .mobile a:nth-child(2) {
+  color: #000;
+}
+.lf-footer .bottom .mobile a:nth-child(3) {
+  color: #666;
+}
+.lf-footer .bottom .web a {
+  color: #666;
+}
